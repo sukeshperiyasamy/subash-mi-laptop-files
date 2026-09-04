@@ -1,0 +1,82 @@
+#include <SoftwareSerial.h>
+#include<AFMotor.h>
+//#include<>
+// Define the GSM module's TX and RX pins
+#define GSM_TX 10
+#define GSM_RX 11
+
+// Define the motor driver pins
+#define motor1A 2
+#define motor1B 3
+#define motor2A 4
+#define motor2B 5
+
+SoftwareSerial gsmSerial(GSM_TX, GSM_RX);
+
+void setup() {
+  // Motor driver pins as outputs
+  pinMode(motor1A, OUTPUT);
+  pinMode(motor1B, OUTPUT);
+  pinMode(motor2A, OUTPUT);
+  pinMode(motor2B, OUTPUT);
+
+  // Start serial communication
+  Serial.begin(9600);
+  gsmSerial.begin(9600);
+
+  // Wait for GSM module to initialize
+  delay(2000);
+
+  // Send a welcome message to indicate the system is ready
+  gsmSerial.println("Car Control System Ready");
+}
+
+void loop() {
+  if (gsmSerial.available() > 0) {
+    // Read the incoming message from GSM module
+    String message = gsmSerial.readString();
+
+    // Process the message and control the car accordingly
+    if (message.startsWith("1")) {
+      // Go forward
+      driveForward();
+    } else if (message.startsWith("2")) {
+      // Turn right
+      turnRight();
+    } else if (message.startsWith("3")) {
+      // Turn left
+      turnLeft();
+    } else if (message.startsWith("4")) {
+      // Go backward
+      driveBackward();
+    }
+  }
+}
+
+void driveForward() {
+  digitalWrite(motor1A, HIGH);
+  digitalWrite(motor1B, LOW);
+  digitalWrite(motor2A, HIGH);
+  digitalWrite(motor2B, LOW);
+}
+
+void turnRight() {
+  digitalWrite(motor1A, HIGH);
+  digitalWrite(motor1B, LOW);
+  digitalWrite(motor2A, LOW);
+  digitalWrite(motor2B, HIGH);
+}
+
+void turnLeft() {
+  digitalWrite(motor1A, LOW);
+  digitalWrite(motor1B, HIGH);
+  digitalWrite(motor2A, HIGH);
+  digitalWrite(motor2B, LOW);
+}
+
+void driveBackward() {
+  digitalWrite(motor1A, LOW);
+  digitalWrite(motor1B, HIGH);
+  digitalWrite(motor2A, LOW);
+  digitalWrite(motor2B, HIGH);
+}
