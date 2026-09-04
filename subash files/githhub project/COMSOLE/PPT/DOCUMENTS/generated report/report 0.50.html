@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="COMSOL Multiphysics model report" />
+    <meta name="keywords" content="comsol multiphysics model report" />
+    <!-- saved from url=(0014)about:internet -->
+    <title>report 0.50</title>
+    <link rel="stylesheet" href="report 0.50_files/report.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div>
+      <a href="https://www.comsol.com">
+        <img src="report 0.50_files/logo.png" width="159" height="34" style="float:right;border:none" />
+      </a>
+    </div>
+    <div class="ReportTitle" id="cs8166156">
+       <span>3D MEMS MH Final 29th OCT 2022 AU 0.50v</span>
+    </div>
+    <h4 id="cs9308777">
+       <span>Report date</span>
+    </h4>
+    <p>
+      <a name="cs4200460">
+         <span>Dec 12, 2022, 5:43:28 PM</span>
+      </a>
+    </p>
+    <div class="TocHeading">
+       <span>Contents</span>
+    </div>
+    <table style="border:0px;">
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs3643824">
+             <span>Global Definitions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs8058215">
+             <span>Component 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs5444671">
+             <span>Definitions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs9214924">
+             <span>Geometry 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6671080">
+             <span>Materials</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs1884705">
+             <span>Solid Mechanics</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.5.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs8233742">
+             <span>Heat Transfer in Solids</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.6.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs7182735">
+             <span>Electric Currents</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.7.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs3337643">
+             <span>Multiphysics</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.8.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs3158575">
+             <span>Mesh 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs6411343">
+             <span>Study 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6207410">
+             <span>Stationary</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs5590425">
+             <span>Results</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6068796">
+             <span>Datasets</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs1676054">
+             <span>Tables</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs9572526">
+             <span>Plot Groups</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs3302683">
+      <a name="cs3643824">
+         <span>1. Global Definitions</span>
+      </a>
+    </h2>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Date</span>
+        </td>
+        <td>
+           <span>Nov 1, 2022, 6:13:54 PM</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4357340">
+           <span>Global settings</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Name</span>
+        </td>
+        <td>
+           <span>3D MEMS MH Final 29th OCT 2022 AU 0.50v.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Path</span>
+        </td>
+        <td>
+           <span>E:\Minor Project\3D MEMS MH_Final_29th_OCT_2022_AU_0.50v.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Version</span>
+        </td>
+        <td>
+           <span>COMSOL Multiphysics 6.0 (Build: 318)</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9812090">
+           <span>Used products</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>COMSOL Multiphysics</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>CAD Import Module</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Structural Mechanics Module</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6063078">
+           <span>Computer information</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>CPU</span>
+        </td>
+        <td>
+           <span>Intel64 Family 6 Model 140 Stepping 1, 4 cores</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Operating system</span>
+        </td>
+        <td>
+           <span>Windows 10</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs2121195">
+      <a name="cs8058215">
+         <span>2. Component 1</span>
+      </a>
+    </h2>
+    <h3 id="cs1872789">
+      <a name="cs5444671">
+         <span>2.1. Definitions</span>
+      </a>
+    </h3>
+    <h4 id="cs8443651">
+      <a name="cs9481076">
+         <span>2.1.1. Coordinate Systems</span>
+      </a>
+    </h4>
+    <h5 id="cs8855423">
+      <a name="cs6083569">
+         <span>Boundary System 1</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Coordinate system type</span>
+        </td>
+        <td>
+           <span>Boundary system</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Tag</span>
+        </td>
+        <td>
+           <span>sys1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2062480">
+           <span>Coordinate names</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>First</span>
+        </th>
+        <th>
+           <span>Second</span>
+        </th>
+        <th>
+           <span>Third</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>t1</span>
+        </td>
+        <td>
+           <span>t2</span>
+        </td>
+        <td>
+           <span>n</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs4563123">
+      <a name="cs9214924">
+         <span>2.2. Geometry 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="report 0.50_files/geom_geom1_view1.png" alt="geom_geom1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs9148440">
+         <span>Geometry 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs1158843">
+           <span>Units</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Length unit</span>
+        </td>
+        <td>
+           <span>µm</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Angular unit</span>
+        </td>
+        <td>
+           <span>deg</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs3140559">
+      <a name="cs6671080">
+         <span>2.3. Materials</span>
+      </a>
+    </h3>
+    <h4 id="cs7348189">
+      <a name="cs8460551">
+         <span>2.3.1. Au - Gold</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/mat_mat1_view1.png" alt="mat_mat1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7764005">
+         <span>Au - Gold</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs9869322">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 3: Domains 2–4</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs6107159">
+      <a name="cs4882892">
+         <span>2.3.2. Si - Polycrystalline silicon</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/mat_mat2_view1.png" alt="mat_mat2_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7368921">
+         <span>Si - Polycrystalline silicon</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs8901589">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 3: Domain 1</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs9104074">
+      <a name="cs1884705">
+         <span>2.4. Solid Mechanics</span>
+      </a>
+    </h3>
+    <p>
+      <img src="report 0.50_files/phys_solid_view1.png" alt="phys_solid_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2730836">
+         <span>Solid Mechanics</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs1521370">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="report 0.50_files/equ_solid.png" alt="equ_solid.png" width="83" height="13" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs3337534">
+           <span>Features</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Level</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Linear Elastic Material 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Free 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Initial Values 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Fixed Constraint 1</span>
+        </td>
+        <td>
+           <span>Edge</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs5978017">
+      <a name="cs8233742">
+         <span>2.5. Heat Transfer in Solids</span>
+      </a>
+    </h3>
+    <p>
+      <img src="report 0.50_files/phys_ht_view1.png" alt="phys_ht_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3269968">
+         <span>Heat Transfer in Solids</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs6678618">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="report 0.50_files/equ_ht_1.png" alt="equ_ht_1.png" width="168" height="17" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="report 0.50_files/equ_ht_2.png" alt="equ_ht_2.png" width="55" height="15" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs9591015">
+           <span>Features</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Level</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solid 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Initial Values 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Thermal Insulation 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Temperature 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2939100">
+      <a name="cs7182735">
+         <span>2.6. Electric Currents</span>
+      </a>
+    </h3>
+    <p>
+      <img src="report 0.50_files/phys_ec_view1.png" alt="phys_ec_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7312270">
+         <span>Electric Currents</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs9680671">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="report 0.50_files/equ_ec_1.png" alt="equ_ec_1.png" width="61" height="17" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="report 0.50_files/equ_ec_2.png" alt="equ_ec_2.png" width="67" height="14" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="report 0.50_files/equ_ec_3.png" alt="equ_ec_3.png" width="48" height="12" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs3177618">
+           <span>Features</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Level</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Current Conservation 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Electric Insulation 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Initial Values 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ground 1</span>
+        </td>
+        <td>
+           <span>Edge</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Electric Potential 1</span>
+        </td>
+        <td>
+           <span>Edge</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs1266526">
+      <a name="cs3337643">
+         <span>2.7. Multiphysics</span>
+      </a>
+    </h3>
+    <h4 id="cs8732559">
+      <a name="cs1873940">
+         <span>2.7.1. Thermal Expansion 1</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/mph_te1_view1.png" alt="mph_te1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5478105">
+         <span>Thermal Expansion 1</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs1623057">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="report 0.50_files/equ_te1.png" alt="equ_te1.png" width="118" height="23" style="padding-left:18pt;border:none" />
+    </p>
+    <h4 id="cs7282201">
+      <a name="cs7659286">
+         <span>2.7.2. Electromagnetic Heating 1</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/mph_emh1_view1.png" alt="mph_emh1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs4380878">
+         <span>Electromagnetic Heating 1</span>
+      </a>
+    </p>
+    <p>
+      <img src="report 0.50_files/mph_emh1_BoundarySelection_view1.png" alt="mph_emh1_BoundarySelection_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs4652164">
+         <span>Boundary selection</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs5697220">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="report 0.50_files/equ_emh1_1.png" alt="equ_emh1_1.png" width="159" height="19" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="report 0.50_files/equ_emh1_2.png" alt="equ_emh1_2.png" width="53" height="13" style="padding-left:18pt;border:none" />
+    </p>
+    <h3 id="cs4803256">
+      <a name="cs3158575">
+         <span>2.8. Mesh 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="report 0.50_files/mesh_mesh1_view1.png" alt="mesh_mesh1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8254649">
+         <span>Mesh 1</span>
+      </a>
+    </p>
+    <h2 id="cs3902142">
+      <a name="cs6411343">
+         <span>3. Study 1</span>
+      </a>
+    </h2>
+    <table border="1">
+      <caption>
+        <a name="cs5486053">
+           <span>Computation information</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Computation time</span>
+        </td>
+        <td>
+           <span>6 min 34 s</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs1372314">
+      <a name="cs6207410">
+         <span>3.1. Stationary</span>
+      </a>
+    </h3>
+    <table border="1">
+      <caption>
+        <a name="cs6331418">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Include geometric nonlinearity</span>
+        </td>
+        <td>
+           <span>Off</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9990329">
+           <span>Physics and variables selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Physics interface</span>
+        </th>
+        <th>
+           <span>Discretization</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solid Mechanics (solid)</span>
+        </td>
+        <td>
+           <span>physics</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Heat Transfer in Solids (ht)</span>
+        </td>
+        <td>
+           <span>physics</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Electric Currents (ec)</span>
+        </td>
+        <td>
+           <span>physics</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7857180">
+           <span>Mesh selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Geometry</span>
+        </th>
+        <th>
+           <span>Mesh</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Geometry 1 (geom1)</span>
+        </td>
+        <td>
+           <span>mesh1</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs1842169">
+      <a name="cs5590425">
+         <span>4. Results</span>
+      </a>
+    </h2>
+    <h3 id="cs8942822">
+      <a name="cs6068796">
+         <span>4.1. Datasets</span>
+      </a>
+    </h3>
+    <h4 id="cs1065445">
+      <a name="cs5452264">
+         <span>4.1.1. Study 1/Solution 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs1594954">
+           <span>Solution</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solution</span>
+        </td>
+        <td>
+           <span>Solution 1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Component</span>
+        </td>
+        <td>
+           <span>Component 1 (comp1)</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="report 0.50_files/dset_dset1.png" alt="dset_dset1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1962881">
+         <span>Dataset: Study 1/Solution 1</span>
+      </a>
+    </p>
+    <h3 id="cs3555795">
+      <a name="cs1676054">
+         <span>4.2. Tables</span>
+      </a>
+    </h3>
+    <h4 id="cs9247400">
+      <a name="cs3755224">
+         <span>4.2.1. Evaluation 3D</span>
+      </a>
+    </h4>
+    <p>
+      <a name="cs1981562">
+         <span>Interactive 3D values</span>
+      </a>
+    </p>
+    <table border="1">
+      <tr>
+        <th>
+           <span>x</span>
+        </th>
+        <th>
+           <span>y</span>
+        </th>
+        <th>
+           <span>z</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>8585.7</span>
+        </td>
+        <td>
+           <span>4018.5</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2471.8</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>8316.9</span>
+        </td>
+        <td>
+           <span>3964.8</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2468.4</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>8827.7</span>
+        </td>
+        <td>
+           <span>4341.2</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2470.6</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>8935.2</span>
+        </td>
+        <td>
+           <span>3857.2</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2470.8</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>9096.5</span>
+        </td>
+        <td>
+           <span>3937.9</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2468.8</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>8854.6</span>
+        </td>
+        <td>
+           <span>3911.0</span>
+        </td>
+        <td>
+           <span>50.000</span>
+        </td>
+        <td>
+           <span>2471.5</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>9096.5</span>
+        </td>
+        <td>
+           <span>3884.1</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2468.9</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>8908.3</span>
+        </td>
+        <td>
+           <span>4018.5</span>
+        </td>
+        <td>
+           <span>50.100</span>
+        </td>
+        <td>
+           <span>2471.1</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs7721784">
+      <a name="cs9572526">
+         <span>4.3. Plot Groups</span>
+      </a>
+    </h3>
+    <h4 id="cs4093591">
+      <a name="cs4367218">
+         <span>4.3.1. Stress (solid)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/pg_pg1.png" alt="pg_pg1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs9849399">
+         <span>Volume: von Mises stress (N/m</span><span class="SuperscriptBodyText">2</span><span>)</span>
+      </a>
+    </p>
+    <h4 id="cs6883066">
+      <a name="cs5685641">
+         <span>4.3.2. Temperature (ht)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/pg_pg2.png" alt="pg_pg2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6320734">
+         <span>Surface: Temperature (K)</span>
+      </a>
+    </p>
+    <h4 id="cs3477086">
+      <a name="cs8866602">
+         <span>4.3.3. Isothermal Contours (ht)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/pg_pg3.png" alt="pg_pg3.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3637798">
+         <span>Isosurface: Temperature (K)</span>
+      </a>
+    </p>
+    <h4 id="cs3462710">
+      <a name="cs8158914">
+         <span>4.3.4. Electric Potential (ec)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/pg_pg4.png" alt="pg_pg4.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2839926">
+         <span>Volume: Electric potential (V)</span>
+      </a>
+    </p>
+    <h4 id="cs2895913">
+      <a name="cs7370612">
+         <span>4.3.5. Electric Field Norm (ec)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="report 0.50_files/pg_pg5.png" alt="pg_pg5.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5085807">
+         <span>Multislice: Electric field norm (V/m)</span>
+      </a>
+    </p>
+  </body>
+</html>
